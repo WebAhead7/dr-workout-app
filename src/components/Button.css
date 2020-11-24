@@ -32,6 +32,7 @@
   border-color: cornflowerblue;
   background-color: rgba(165, 42, 144, 0.342);
   animation: none;
+  cursor: pointer;
 }
 
 .Button:focus {

@@ -1,10 +1,17 @@
-import SignIn from './pages/SignIn';
+import Home from './pages/Home';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <SignIn />
-    </>
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 
