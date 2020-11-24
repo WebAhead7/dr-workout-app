@@ -3,17 +3,37 @@
   border-color: rgba(0, 255, 255, 0.432);
   display: block;
   background-color: unset;
-  font-size: large;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 10px;
-  margin: 10px;
+  font-size: x-large;
+  font-family: Andale Mono, monospace;
+  font-weight: bold;
+  padding: 30px;
+  margin: 20px;
   color: rgba(15, 50, 206, 0.719);
+  animation: float 6s ease-in-out infinite;
+  background-color: rgba(165, 42, 144, 0.192);
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
 }
 
 .Button:hover {
   border-color: cornflowerblue;
+  background-color: rgba(165, 42, 144, 0.342);
+  animation: none;
 }
 
 .Button:focus {
+  outline: none;
 }
