@@ -1,0 +1,246 @@
+[
+    {
+        "category": "Back & Shoulders",
+        "name": "B1",
+        "gif-url": "https://i.pinimg.com/originals/49/e2/47/49e247d529e46aee55ffb5b3b28eacac.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 1,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Back & Shoulders",
+        "name": "B2",
+        "gif-url": "https://i.pinimg.com/originals/79/05/59/790559a117cc9ee9bbe1752815b84978.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 2,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Back & Shoulders",
+        "name": "B3",
+        "gif-url": "https://i.pinimg.com/originals/c4/15/13/c41513afb3abb500d59dfae4a5ebbf33.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 3,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Back & Shoulders",
+        "name": "B4",
+        "gif-url": "https://i.pinimg.com/originals/50/c3/3c/50c33c1db76aee45c3b9d153f26c4a25.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 4,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Back & Shoulders",
+        "name": "B5",
+        "gif-url": "https://i.pinimg.com/originals/17/8a/e8/178ae80f69cfb6852aa9aca1bc17709d.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 5,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Chest & Triceps",
+        "name": "C1",
+        "gif-url": "https://i.pinimg.com/originals/31/57/30/31573030a006e613c44987ff4cfa3b96.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 1,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Chest & Triceps",
+        "name": "C2",
+        "gif-url": "https://i.pinimg.com/originals/db/91/c5/db91c5121f4ce86603234a8bd5585574.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 1,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Chest & Triceps",
+        "name": "C3",
+        "gif-url": "hhttps://i.pinimg.com/originals/b5/9c/8a/b59c8a598d71f2cf24eb5ea857e00ce1.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 2,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Chest & Triceps",
+        "name": "C4",
+        "gif-url": "https://i.pinimg.com/originals/48/7f/a0/487fa017415ef97c70efe396b68d5f65.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 3,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Chest & Triceps",
+        "name": "C5",
+        "gif-url": "https://i.pinimg.com/originals/4b/20/d6/4b20d60a2f6b5ee0e414b20266b62f91.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 4,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Chest & Triceps",
+        "name": "C6",
+        "gif-url": "https://i.pinimg.com/originals/2b/b7/14/2bb714fc4307d33df93cf62d56f486b2.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 5,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Legs & Lower Back",
+        "name": "L1",
+        "gif-url": "https://i.pinimg.com/originals/c8/b3/3b/c8b33ba060b1edbd7ca826e1faf6ba0f.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 1,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Legs & Lower Back",
+        "name": "L2",
+        "gif-url": "https://i.pinimg.com/originals/b3/8d/a2/b38da20664cbd52a10f93c349a8542b2.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 2,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Legs & Lower Back",
+        "name": "L3",
+        "gif-url": "https://i.pinimg.com/originals/27/30/c2/2730c2da52a5f9200caa7e5d8705efde.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 3,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Legs & Lower Back",
+        "name": "L4",
+        "gif-url": "https://i.pinimg.com/originals/40/02/79/400279b134b313d7fc6e6f9a313bda4e.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 4,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Legs & Lower Back",
+        "name": "L5",
+        "gif-url": "https://i.pinimg.com/originals/50/2e/4e/502e4e797b053a650c9a1044ddb09925.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 5,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Legs & Lower Back",
+        "name": "L6",
+        "gif-url": "https://i.pinimg.com/originals/50/2e/4e/502e4e797b053a650c9a1044ddb09925.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 6,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Legs & Lower Back",
+        "name": "L7",
+        "gif-url": "https://i.pinimg.com/originals/e9/90/2b/e9902beff1f23a4b3e4712639fb53f7b.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 7,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Legs & Lower Back",
+        "name": "L8",
+        "gif-url": "https://i.pinimg.com/originals/64/c9/2b/64c92b54a7a3e607b0da5a8eee1ea9b5.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 8,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Abs",
+        "name": "A1",
+        "gif-url": "https://i.pinimg.com/originals/82/ac/f3/82acf346b871a0ce8f97c0de7af6fcae.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 1,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Abs",
+        "name": "A2",
+        "gif-url": "https://i.pinimg.com/originals/34/9f/7d/349f7dd0a9457f4ebccc2b13dd808930.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 2,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Abs",
+        "name": "A3",
+        "gif-url": "https://i.pinimg.com/originals/7c/a1/a8/7ca1a88a4a2765bbb0a32815bb0ca572.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 3,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Abs",
+        "name": "A4",
+        "gif-url": "https://i.pinimg.com/originals/31/86/b2/3186b29512a53ca21e0a237bf691a755.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 4,
+        "tip": "Aodrooop"
+    },
+    {
+        "category": "Abs",
+        "name": "A5",
+        "gif-url": "https://i.pinimg.com/originals/b2/9b/f6/b29bf67f29a03823286eb6357f502e59.gif",
+        "time_sec" : 0,
+        "time_min" : 1,
+        "repeate" : 10,
+        "level": 5,
+        "tip": "Aodrooop"
+    }
+
+
+    
+    
+]
