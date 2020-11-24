@@ -10,8 +10,8 @@ const Home = () => {
     <>
       <div className="container">Dr Workout App</div>
       <div className="container">
-        <Button text="Sign Up" />
-        <Button text="Sign In" />
+        <Button text="Sign Up" href="/signup" />
+        <Button text="Sign In" href="/signin" />
       </div>
     </>
   );
