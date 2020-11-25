@@ -22,8 +22,8 @@ Quick and effective workouts! Do you have what it takes to take the 5 minute wor
 <br>
  
 <p align="center">
-  <img src="./back.jpg" width=320px height=360px />
-    <img src="./bg.jpg" width=320px height=360px />
+  <img src="Readmeimg/back.jpg" width=320px height=360px />
+    <img src="Readmeimg/bg.jpg" width=320px height=360px />
 
 </p>
 
@@ -48,7 +48,7 @@ Quick and effective workouts! Do you have what it takes to take the 5 minute wor
 * Nizar:[@GitHub](https://github.com/nizarhalloun)
 <br>
 <p align="center">
-  <img src="./tenor.gif" width=720px height=360px />
+  <img src="Readmeimg/tenor.gif" width=720px height=360px />
 </p>
 <br>
 
