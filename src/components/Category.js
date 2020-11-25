@@ -1,7 +1,11 @@
 import React from "react";
 
 function Category(props) {
-  return <button>{props.name}</button>;
+  return (
+    <button onClick={() => props.handleClicked(props.name)}>
+      {props.name}
+    </button>
+  );
 }
 
 export default Category;
