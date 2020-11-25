@@ -1,16 +1,18 @@
-import { useState } from "react";
-import { Redirect } from "react-router-dom";
-import "./Form.css";
+import { useState } from 'react';
+import { Redirect } from 'react-router-dom';
+import './Form.css';
+import { useHistory } from 'react-router-dom';
 const SignIn = () => {
   const [state, setState] = useState({
-    name: "",
-    password: "",
+    name: '',
+    password: '',
     errors: {
-      name: "",
-      password: "",
+      name: '',
+      password: '',
     },
   });
 
+  const history = useHistory();
   const [authenticationStatus, SetAuthentication] = useState(false);
 
   const isUserExist = (name) => window.localStorage.getItem(name);
@@ -25,9 +27,9 @@ const SignIn = () => {
     let errors = { ...state.errors };
     console.log(errors);
     const { name, password } = state;
-    errors.name = !isUserExist(name) ? "User doas not exist" : "";
+    errors.name = !isUserExist(name) ? 'User doas not exist' : '';
     errors.password =
-      getUserPassword(name) !== password ? "Password is wrong" : "";
+      getUserPassword(name) !== password ? 'Password is wrong' : '';
     SetAuthentication(errors.name.length === 0 && errors.password.length === 0);
     setState({ ...state, errors });
   };
@@ -71,7 +73,7 @@ const SignIn = () => {
             <div className="submit">
               <button>Sign In</button>
             </div>
-            <a href="/signup">Sign Up</a>
+            <button onClick={() => history.push('/signup')}>Sign Up</button>
           </form>
         </div>
       </div>
