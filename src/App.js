@@ -1,8 +1,11 @@
-import Home from './pages/Home';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+// import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import Categories from "./pages/WorkoutCategories";
+import Workout from "./pages/Workout";
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/categories" component={Categories} />
+          <Route exact path="/workout/:category" component={Workout} />
         </Switch>
       </Router>
     </div>

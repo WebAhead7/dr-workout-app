@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.categories-backgroud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.categories-backgroud ul {
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: chocolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.categories-backgroud ul li {
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+.categories-backgroud button {
+  width: 80%;
+  height: 100%;
+  background: transparent;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 24px;
+}
+
