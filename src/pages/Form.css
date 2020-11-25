@@ -28,10 +28,10 @@ SILVER PINK: #C9ADA7
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 350px;
   max-width: 80%;
   min-width: 100px;
-  min-height: 400px;
+  min-height: 500px;
   padding: 20px 40px;
   border-radius: 6px;
   box-shadow: 0px 8px 36px #222;

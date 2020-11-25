@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  /* height: 95vh; */
 }
 
 .categories-backgroud ul {
@@ -17,7 +17,7 @@
   height: 100%;
   border: 2px solid black;
   border-radius: 10px;
-  background: chocolate;
+  background: rgb(107, 106, 114);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,13 +25,19 @@
 }
 .categories-backgroud ul li {
   width: 100%;
-  height: 14vh;
+  height: 25vh;
   display: flex;
   justify-self: center;
   align-items: center;
   margin-bottom: 3vh;
 }
-.categories-backgroud button {
+
+.categories-backgroud ul li:first-child {
+  width: 125%;
+  border-radius: 0px;
+}
+.categories-backgroud button,
+.logo {
   width: 80%;
   height: 100%;
   background: transparent;
@@ -40,3 +46,12 @@
   font-size: 24px;
 }
 
+.logo {
+  background: url("./images/logo.jpeg");
+  background-size: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0px;
+}

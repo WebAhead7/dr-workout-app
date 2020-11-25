@@ -28,12 +28,22 @@ function Categories(props) {
     if (selectedCategory) {
       return <Redirect to={`workout/${selectedCategory}`} />;
     }
+    console.log(categories);
     return (
       <div className="categories-backgroud">
         <ul>
+          <li>
+            <div className="logo">
+              <h1>Dr Workout</h1>
+            </div>
+          </li>
           {categories.map((category) => (
-            <li key={category}>
-              <Category name={category} handleClicked={handleSelectCategory} />
+            <li key={category.name}>
+              <Category
+                name={category.name}
+                backgroundurl={category.url}
+                handleClicked={handleSelectCategory}
+              />
             </li>
           ))}
         </ul>
