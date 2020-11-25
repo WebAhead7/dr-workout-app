@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import './Form.css';
+import { useHistory } from 'react-router-dom';
 const SignIn = () => {
   const [state, setState] = useState({
     name: '',
@@ -11,6 +12,7 @@ const SignIn = () => {
     },
   });
 
+  const history = useHistory();
   const [authenticationStatus, SetAuthentication] = useState(false);
 
   const isUserExist = (name) => window.localStorage.getItem(name);
@@ -71,7 +73,7 @@ const SignIn = () => {
             <div className="submit">
               <button>Sign In</button>
             </div>
-            <a href="/signup">Sign Up</a>
+            <button onClick={() => history.push('/signup')}>Sign Up</button>
           </form>
         </div>
       </div>
