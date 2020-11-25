@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { Redirect } from "react-router-dom";
-import "./Form.css";
+import { useState } from 'react';
+import { Redirect } from 'react-router-dom';
+import './Form.css';
 const SignIn = () => {
   const [state, setState] = useState({
-    name: "",
-    password: "",
+    name: '',
+    password: '',
     errors: {
-      name: "",
-      password: "",
+      name: '',
+      password: '',
     },
   });
 
@@ -23,11 +23,11 @@ const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     let errors = { ...state.errors };
-    console.log(errors);
+
     const { name, password } = state;
-    errors.name = !isUserExist(name) ? "User doas not exist" : "";
+    errors.name = !isUserExist(name) ? 'User doas not exist' : '';
     errors.password =
-      getUserPassword(name) !== password ? "Password is wrong" : "";
+      getUserPassword(name) !== password ? 'Password is wrong' : '';
     SetAuthentication(errors.name.length === 0 && errors.password.length === 0);
     setState({ ...state, errors });
   };

@@ -1,15 +1,15 @@
-import { useState } from "react";
-import { Redirect } from "react-router-dom";
-import "./Form.css";
+import { useState } from 'react';
+import { Redirect } from 'react-router-dom';
+import './Form.css';
 const SignUp = () => {
   const [state, setState] = useState({
-    name: "",
-    password: "",
-    confirmPassword: "",
+    name: '',
+    password: '',
+    confirmPassword: '',
     errors: {
-      name: "",
-      password: "",
-      confirmPassword: "",
+      name: '',
+      password: '',
+      confirmPassword: '',
     },
   });
 
@@ -20,16 +20,16 @@ const SignUp = () => {
 
     let errors = state.errors;
     switch (name) {
-      case "name":
-        errors.name = value.length < 5 ? "Name is too short" : "";
+      case 'name':
+        errors.name = value.length < 5 ? 'Name is too short' : '';
         break;
-      case "password":
-        errors.password = value.length < 8 ? "Password is too short" : "";
+      case 'password':
+        errors.password = value.length < 8 ? 'Password is too short' : '';
         break;
-      case "confirmPassword":
+      case 'confirmPassword':
         console.log(state);
         errors.confirmPassword =
-          state.password !== value ? "Passwords do not match" : "";
+          state.password !== value ? 'Passwords do not match' : '';
         break;
       default:
     }
@@ -44,11 +44,11 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateErrors(state.errors)) {
-      console.log("Valid form");
+      console.log('Valid form');
       saveOnLocalStorage(state.name, state.password);
       setValid(true);
     } else {
-      console.log("Invalid form");
+      console.log('Invalid form');
     }
   };
 
