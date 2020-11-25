@@ -114,7 +114,7 @@ input::placeholder {
   font-size: 18px;
 }
 .submit > button:hover {
-  background-color: #4a4e69;
+  background-color: black;
   color: #fefefe;
 }
 
@@ -126,6 +126,7 @@ input.error {
   color: #db2269;
   font-size: 0.625em;
   display: relative;
+  margin: auto;
 }
 
 .name {
@@ -157,4 +158,5 @@ input.error {
 
 form > a {
   margin-top: 10px;
+  color: black;
 }

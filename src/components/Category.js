@@ -3,9 +3,10 @@ import React from "react";
 function Category(props) {
   const categoryStyle = {
     background: `url(${props.backgroundurl})`,
-    "background-size": "100%",
+    backgroundSize: "100%",
     color: "white",
-    "font-size": "24px",
+    fontSize: "24px",
+    cursor: " pointer",
   };
   return (
     <button
