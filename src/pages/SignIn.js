@@ -71,6 +71,7 @@ const SignIn = () => {
             <div className="submit">
               <button>Sign In</button>
             </div>
+            <a href="/signup">Sign Up</a>
           </form>
         </div>
       </div>
