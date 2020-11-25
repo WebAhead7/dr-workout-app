@@ -69,7 +69,9 @@ const SignUp = () => {
     return (
       <div className="wrapper">
         <div className="form-wrapper">
-          <h2>Sign Up</h2>
+          <div className="login-logo">
+            <h1>Dr Workout</h1>
+          </div>
           <form onSubmit={handleSubmit}>
             <div className="name">
               <input

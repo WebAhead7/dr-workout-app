@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import { Redirect } from 'react-router-dom';
-import './Form.css';
-import { useHistory } from 'react-router-dom';
+import { useState } from "react";
+import { Redirect } from "react-router-dom";
+import "./Form.css";
+import { useHistory } from "react-router-dom";
 const SignIn = () => {
   const [state, setState] = useState({
-    name: '',
-    password: '',
+    name: "",
+    password: "",
     errors: {
-      name: '',
-      password: '',
+      name: "",
+      password: "",
     },
   });
 
@@ -27,9 +27,9 @@ const SignIn = () => {
     let errors = { ...state.errors };
     console.log(errors);
     const { name, password } = state;
-    errors.name = !isUserExist(name) ? 'User doas not exist' : '';
+    errors.name = !isUserExist(name) ? "User doas not exist" : "";
     errors.password =
-      getUserPassword(name) !== password ? 'Password is wrong' : '';
+      getUserPassword(name) !== password ? "Password is wrong" : "";
     SetAuthentication(errors.name.length === 0 && errors.password.length === 0);
     setState({ ...state, errors });
   };
@@ -43,7 +43,9 @@ const SignIn = () => {
     return (
       <div className="wrapper">
         <div className="form-wrapper">
-          <h2>Sign In</h2>
+          <div className="login-logo">
+            <h1>Dr Workout</h1>
+          </div>
           <form onSubmit={handleSubmit}>
             <div className="name">
               <input
@@ -73,7 +75,7 @@ const SignIn = () => {
             <div className="submit">
               <button>Sign In</button>
             </div>
-            <button onClick={() => history.push('/signup')}>Sign Up</button>
+            <a href='/signup'>Sign Up</a>
           </form>
         </div>
       </div>

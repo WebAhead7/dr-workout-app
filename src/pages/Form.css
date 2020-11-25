@@ -17,22 +17,36 @@ SILVER PINK: #C9ADA7
 
 .wrapper {
   height: 97vh;
-  width: 100%;
+  width: 50%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #4a4e69;
+  background-color: rgb(107, 106, 114);
+}
+
+.login-logo {
+  width: 100%;
+  height: 25%;
+  background: url("./styles/images/logo.jpeg");
+  background-size: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 90%;
   max-width: 80%;
   min-width: 100px;
   min-height: 500px;
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
   border-radius: 6px;
   box-shadow: 0px 8px 36px #222;
   background-color: #fefefe;
@@ -52,7 +66,11 @@ SILVER PINK: #C9ADA7
 .form-wrapper > form {
   width: 100%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
 }
 
 .info {
@@ -68,6 +86,8 @@ label {
 }
 
 input {
+  width: 80%;
+  margin: auto;
   padding: 10px 10px;
   border-radius: 5px;
   outline: none;
@@ -81,15 +101,17 @@ input::placeholder {
 }
 
 .submit > button {
-  min-width: 100%;
+  /* min-width: 100%; */
   cursor: pointer;
   margin-right: 0.25em;
-  margin-top: 0.5em;
+  margin: auto;
+  width: 80%;
   padding: 0.938em;
   border: none;
   border-radius: 4px;
-  background-color: #22223b;
+  background-color: rgb(107, 106, 114);
   color: #fefefe;
+  font-size: 18px;
 }
 .submit > button:hover {
   background-color: #4a4e69;
@@ -131,4 +153,8 @@ input.error {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+
+form > a {
+  margin-top: 10px;
 }
