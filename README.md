@@ -1,7 +1,7 @@
 # Dr.Workout: 
 
 <p align="center">
-  <img src="./dumbbell.jpg" width=1080px height=360px />
+  <img src="/Readmeimg/dumbbell.jpg" width=1080px height=360px />
 </p>
 
   <p align="center">
