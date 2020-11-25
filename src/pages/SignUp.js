@@ -64,7 +64,7 @@ const SignUp = () => {
 
   const render = () => {
     if (valid) {
-      return <Redirect to="/signin" />;
+      return <Redirect to="/" />;
     }
     return (
       <div className="wrapper">
