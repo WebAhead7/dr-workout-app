@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import './Form.css';
 const SignUp = () => {
   const [state, setState] = useState({
     name: '',
@@ -21,7 +21,7 @@ const SignUp = () => {
         errors.name = value.length < 5 ? 'Name is too short' : '';
         break;
       case 'password':
-        errors.password = value.length < 5 ? 'Password is too short' : '';
+        errors.password = value.length < 8 ? 'Password is too short' : '';
         break;
       case 'confirmPassword':
         console.log(state);
@@ -32,14 +32,6 @@ const SignUp = () => {
     }
 
     setState({ ...state, errors, [name]: value });
-  };
-
-  const clearErros = (errors) => {
-    const newErrors = { ...errors };
-    for (const error in newErrors) {
-      newErrors[error] = '';
-    }
-    return newErrors;
   };
 
   const saveOnLocalStorage = (name, password) => {
@@ -67,41 +59,55 @@ const SignUp = () => {
   const { errors } = state;
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="name"
-          onChange={handleChange}
-        />
-        <hr />
-        {errors.name.length > 0 && <span className="error">{errors.name}</span>}
-        <hr />
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          onChange={handleChange}
-        />
-        <hr />
-        {errors.password.length > 0 && (
-          <span className="error">{errors.password}</span>
-        )}
-        <hr />
-        <input
-          type="password"
-          name="confirmPassword"
-          placeholder="password"
-          onChange={handleChange}
-        />
-        <hr />
-        {errors.confirmPassword.length > 0 && (
-          <span className="error">{errors.confirmPassword}</span>
-        )}
-        <hr />
-        <input type="submit" className="submit" />
-      </form>
+    <div className="wrapper">
+      <div className="form-wrapper">
+        <h2>Sign Up</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="name">
+            <input
+              type="text"
+              name="name"
+              placeholder="name"
+              onChange={handleChange}
+              autoComplete="off"
+            />
+
+            {errors.name.length > 0 && (
+              <span className="error">{errors.name}</span>
+            )}
+          </div>
+          <div className="password">
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              onChange={handleChange}
+            />
+
+            {errors.password.length > 0 && (
+              <span className="error">{errors.password}</span>
+            )}
+          </div>
+          <div className="password">
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="password"
+              onChange={handleChange}
+            />
+
+            {errors.confirmPassword.length > 0 && (
+              <span className="error">{errors.confirmPassword}</span>
+            )}
+          </div>
+          <div className="info">
+            <small>Password must be eight characters in length.</small>
+          </div>
+          <div className="submit">
+            <button>Sign Up</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

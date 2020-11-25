@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import './Form.css';
 const SignIn = () => {
   const [state, setState] = useState({
     name: '',
@@ -29,30 +29,40 @@ const SignIn = () => {
   const { errors } = state;
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="name"
-          onChange={handleChange}
-        />
-        <hr />
-        {errors.name.length > 0 && <span className="error">{errors.name}</span>}
-        <hr />
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          onChange={handleChange}
-        />
-        <hr />
-        {errors.password.length > 0 && (
-          <span className="error">{errors.password}</span>
-        )}
-        <hr />
-        <input type="submit" />
-      </form>
+    <div className="wrapper">
+      <div className="form-wrapper">
+        <h2>Sign In</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="name">
+            <input
+              type="text"
+              name="name"
+              placeholder="name"
+              onChange={handleChange}
+              autoComplete="off"
+            />
+
+            {errors.name.length > 0 && (
+              <span className="error">{errors.name}</span>
+            )}
+          </div>
+          <div className="password">
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              onChange={handleChange}
+            />
+
+            {errors.password.length > 0 && (
+              <span className="error">{errors.password}</span>
+            )}
+          </div>
+          <div className="submit">
+            <button>Sign In</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
