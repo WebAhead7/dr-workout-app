@@ -42,10 +42,15 @@ const SignUp = () => {
     return newErrors;
   };
 
+  const saveOnLocalStorage = (name, password) => {
+    window.localStorage.setItem(name, password);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateErrors(state.errors)) {
       console.log('Valid form');
+      saveOnLocalStorage(state.name, state.password);
     } else {
       console.log('Invalid form');
     }
