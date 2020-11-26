@@ -25,7 +25,7 @@ const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     let errors = { ...state.errors };
-    console.log(errors);
+
     const { name, password } = state;
     errors.name = !isUserExist(name) ? "User doas not exist" : "";
     errors.password =

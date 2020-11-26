@@ -1,11 +1,10 @@
-import Home from "./pages/Home";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 // import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import React from "react";
-import Categories from "./pages/WorkoutCategories";
-import Workout from "./pages/Workout";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import Categories from './pages/WorkoutCategories';
+import Workout from './pages/Workout';
 
 function App() {
   return (
