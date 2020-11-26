@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, NavLink } from 'react-router-dom';
 import './Form.css';
 const SignUp = () => {
   const [state, setState] = useState({
@@ -79,7 +79,7 @@ const SignUp = () => {
             <input
               type="text"
               name="name"
-              placeholder="name"
+              placeholder="Name"
               onChange={handleChange}
               autoComplete="off"
             />
@@ -92,7 +92,7 @@ const SignUp = () => {
             <input
               type="password"
               name="password"
-              placeholder="password"
+              placeholder="Password"
               onChange={handleChange}
             />
 
@@ -104,7 +104,7 @@ const SignUp = () => {
             <input
               type="password"
               name="confirmPassword"
-              placeholder="password"
+              placeholder="Confirm password"
               onChange={handleChange}
             />
 
@@ -118,6 +118,7 @@ const SignUp = () => {
           <div className="submit">
             <button>Sign Up</button>
           </div>
+          <NavLink to="/">Sign In</NavLink>
         </form>
       </div>
     </div>
