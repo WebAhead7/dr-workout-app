@@ -5,7 +5,8 @@
 </p>
 
   <p align="center">
-    <a href="https://www.google.co.il/" ><strong>Check our website »</strong></a>
+    <a href="https://drworkout123.netlify.app/
+" ><strong>Check our website »</strong></a>
   </p>
 
 ## Dr.Workout:

@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { getWorkouts } from "../utils/getData";
 import "./styles/workouts.css";
+import CricyleCounter from "../components/CircyleCounter";
 
 function Workout() {
   const [workouts, setWorkouts] = React.useState(null);
@@ -43,7 +44,11 @@ function Workout() {
         <img src={currentWorkout.gif_url} alt="workout image"></img>
       </div>
       <h3>{currentWorkout.tip}</h3>
-      <h3> here timer willbe added</h3>
+      <div className="timer-rounds-container">
+        <CricyleCounter title={"Time PR"} count={59} />
+        <CricyleCounter title={"Rounds"} count={10} />
+        <div className="controls-container">start pause</div>
+      </div>
       <button onClick={handlePrev}> Previous </button>
       <button onClick={handleNext}> Next </button>
     </div>
