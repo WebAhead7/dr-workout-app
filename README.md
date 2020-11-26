@@ -23,8 +23,7 @@ Quick and effective workouts! Do you have what it takes to take the 5 minute wor
 <br>
  
 <p align="center">
-  <img src="Readmeimg/back.jpg" width=320px height=360px />
-    <img src="Readmeimg/bg.jpg" width=320px height=360px />
+  <img src="Readmeimg/back.jpg" width=1080px height=360px />
 
 </p>
 
