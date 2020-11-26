@@ -1,14 +1,13 @@
-import { useState } from "react";
-import { Redirect } from "react-router-dom";
-import "./Form.css";
-import { useHistory } from "react-router-dom";
+import { useState } from 'react';
+import './Form.css';
+import { useHistory, NavLink } from 'react-router-dom';
 const SignIn = () => {
   const [state, setState] = useState({
-    name: "",
-    password: "",
+    name: '',
+    password: '',
     errors: {
-      name: "",
-      password: "",
+      name: '',
+      password: '',
     },
   });
 
@@ -27,9 +26,9 @@ const SignIn = () => {
     let errors = { ...state.errors };
 
     const { name, password } = state;
-    errors.name = !isUserExist(name) ? "User doas not exist" : "";
+    errors.name = !isUserExist(name) ? 'User doas not exist' : '';
     errors.password =
-      getUserPassword(name) !== password ? "Password is wrong" : "";
+      getUserPassword(name) !== password ? 'Password is wrong' : '';
     SetAuthentication(errors.name.length === 0 && errors.password.length === 0);
     setState({ ...state, errors });
   };
@@ -37,7 +36,7 @@ const SignIn = () => {
   const { errors } = state;
 
   if (authenticationStatus) {
-    history.push("/categories");
+    history.push('/categories');
   }
 
   return (
@@ -75,7 +74,7 @@ const SignIn = () => {
           <div className="submit">
             <button>Sign In</button>
           </div>
-          <a href="/signup">Sign Up</a>
+          <NavLink to="/signup">Sign Up</NavLink>
         </form>
       </div>
     </div>
