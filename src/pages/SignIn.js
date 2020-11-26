@@ -12,7 +12,6 @@ const SignIn = () => {
   });
 
   const history = useHistory();
-  const [authenticationStatus, SetAuthentication] = useState(false);
 
   const isUserExist = (name) => window.localStorage.getItem(name);
   const getUserPassword = (name) => window.localStorage.getItem(name);
@@ -29,15 +28,15 @@ const SignIn = () => {
     errors.name = !isUserExist(name) ? 'User doas not exist' : '';
     errors.password =
       getUserPassword(name) !== password ? 'Password is wrong' : '';
-    SetAuthentication(errors.name.length === 0 && errors.password.length === 0);
+
+    if (!errors.name && !errors.password) {
+      history.push('/categories');
+    }
+
     setState({ ...state, errors });
   };
 
   const { errors } = state;
-
-  if (authenticationStatus) {
-    history.push('/categories');
-  }
 
   return (
     <div className="wrapper">
@@ -50,7 +49,7 @@ const SignIn = () => {
             <input
               type="text"
               name="name"
-              placeholder="name"
+              placeholder="Name"
               onChange={handleChange}
               autoComplete="off"
             />
@@ -63,7 +62,7 @@ const SignIn = () => {
             <input
               type="password"
               name="password"
-              placeholder="password"
+              placeholder="Password"
               onChange={handleChange}
             />
 
