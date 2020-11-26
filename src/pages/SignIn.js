@@ -1,19 +1,17 @@
-import { useState } from "react";
-import { Redirect } from "react-router-dom";
-import "./Form.css";
-import { useHistory } from "react-router-dom";
+import { useState } from 'react';
+import './Form.css';
+import { useHistory, NavLink } from 'react-router-dom';
 const SignIn = () => {
   const [state, setState] = useState({
-    name: "",
-    password: "",
+    name: '',
+    password: '',
     errors: {
-      name: "",
-      password: "",
+      name: '',
+      password: '',
     },
   });
 
   const history = useHistory();
-  const [authenticationStatus, SetAuthentication] = useState(false);
 
   const isUserExist = (name) => window.localStorage.getItem(name);
   const getUserPassword = (name) => window.localStorage.getItem(name);
@@ -27,18 +25,18 @@ const SignIn = () => {
     let errors = { ...state.errors };
 
     const { name, password } = state;
-    errors.name = !isUserExist(name) ? "User doas not exist" : "";
+    errors.name = !isUserExist(name) ? 'User doas not exist' : '';
     errors.password =
-      getUserPassword(name) !== password ? "Password is wrong" : "";
-    SetAuthentication(errors.name.length === 0 && errors.password.length === 0);
+      getUserPassword(name) !== password ? 'Password is wrong' : '';
+
+    if (!errors.name && !errors.password) {
+      history.push('/categories');
+    }
+
     setState({ ...state, errors });
   };
 
   const { errors } = state;
-
-  if (authenticationStatus) {
-    history.push("/categories");
-  }
 
   return (
     <div className="wrapper">
@@ -51,7 +49,7 @@ const SignIn = () => {
             <input
               type="text"
               name="name"
-              placeholder="name"
+              placeholder="Name"
               onChange={handleChange}
               autoComplete="off"
             />
@@ -64,7 +62,7 @@ const SignIn = () => {
             <input
               type="password"
               name="password"
-              placeholder="password"
+              placeholder="Password"
               onChange={handleChange}
             />
 
@@ -75,7 +73,7 @@ const SignIn = () => {
           <div className="submit">
             <button>Sign In</button>
           </div>
-          <a href="/signup">Sign Up</a>
+          <NavLink to="/signup">Sign Up</NavLink>
         </form>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
-// import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React from 'react';
 import Categories from './pages/WorkoutCategories';
@@ -11,7 +10,6 @@ function App() {
     <div>
       <Router>
         <Switch>
-          {/* <Route exact path="/" component={Home} /> */}
           <Route exact path="/" component={SignIn} />
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/categories" component={Categories} />
