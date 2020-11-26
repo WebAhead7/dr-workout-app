@@ -36,53 +36,50 @@ const SignIn = () => {
 
   const { errors } = state;
 
-  const render = () => {
-    if (authenticationStatus) {
-      return <Redirect to="/categories" />;
-    }
-    return (
-      <div className="wrapper">
-        <div className="form-wrapper">
-          <div className="login-logo">
-            <h1>Dr Workout</h1>
-          </div>
-          <form onSubmit={handleSubmit}>
-            <div className="name">
-              <input
-                type="text"
-                name="name"
-                placeholder="name"
-                onChange={handleChange}
-                autoComplete="off"
-              />
+  if (authenticationStatus) {
+    history.push("/categories");
+  }
 
-              {errors.name.length > 0 && (
-                <span className="error">{errors.name}</span>
-              )}
-            </div>
-            <div className="password">
-              <input
-                type="password"
-                name="password"
-                placeholder="password"
-                onChange={handleChange}
-              />
-
-              {errors.password.length > 0 && (
-                <span className="error">{errors.password}</span>
-              )}
-            </div>
-            <div className="submit">
-              <button>Sign In</button>
-            </div>
-            <a href='/signup'>Sign Up</a>
-          </form>
+  return (
+    <div className="wrapper">
+      <div className="form-wrapper">
+        <div className="login-logo">
+          <h1>Dr Workout</h1>
         </div>
-      </div>
-    );
-  };
+        <form onSubmit={handleSubmit}>
+          <div className="name">
+            <input
+              type="text"
+              name="name"
+              placeholder="name"
+              onChange={handleChange}
+              autoComplete="off"
+            />
 
-  return <div>{render()}</div>;
+            {errors.name.length > 0 && (
+              <span className="error">{errors.name}</span>
+            )}
+          </div>
+          <div className="password">
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              onChange={handleChange}
+            />
+
+            {errors.password.length > 0 && (
+              <span className="error">{errors.password}</span>
+            )}
+          </div>
+          <div className="submit">
+            <button>Sign In</button>
+          </div>
+          <a href="/signup">Sign Up</a>
+        </form>
+      </div>
+    </div>
+  );
 };
 
 export default SignIn;

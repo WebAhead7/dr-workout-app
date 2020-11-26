@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 import "./Form.css";
 const SignUp = () => {
   const [state, setState] = useState({
@@ -14,6 +14,8 @@ const SignUp = () => {
   });
 
   const [valid, setValid] = useState(false);
+
+  const history = useHistory();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -62,67 +64,64 @@ const SignUp = () => {
 
   const { errors } = state;
 
-  const render = () => {
-    if (valid) {
-      return <Redirect to="/" />;
-    }
-    return (
-      <div className="wrapper">
-        <div className="form-wrapper">
-          <div className="login-logo">
-            <h1>Dr Workout</h1>
-          </div>
-          <form onSubmit={handleSubmit}>
-            <div className="name">
-              <input
-                type="text"
-                name="name"
-                placeholder="name"
-                onChange={handleChange}
-                autoComplete="off"
-              />
+  if (valid) {
+    history.push("/");
+  }
 
-              {errors.name.length > 0 && (
-                <span className="error">{errors.name}</span>
-              )}
-            </div>
-            <div className="password">
-              <input
-                type="password"
-                name="password"
-                placeholder="password"
-                onChange={handleChange}
-              />
-
-              {errors.password.length > 0 && (
-                <span className="error">{errors.password}</span>
-              )}
-            </div>
-            <div className="password">
-              <input
-                type="password"
-                name="confirmPassword"
-                placeholder="password"
-                onChange={handleChange}
-              />
-
-              {errors.confirmPassword.length > 0 && (
-                <span className="error">{errors.confirmPassword}</span>
-              )}
-            </div>
-            <div className="info">
-              <small>Password must be eight characters in length.</small>
-            </div>
-            <div className="submit">
-              <button>Sign Up</button>
-            </div>
-          </form>
+  return (
+    <div className="wrapper">
+      <div className="form-wrapper">
+        <div className="login-logo">
+          <h1>Dr Workout</h1>
         </div>
-      </div>
-    );
-  };
+        <form onSubmit={handleSubmit}>
+          <div className="name">
+            <input
+              type="text"
+              name="name"
+              placeholder="name"
+              onChange={handleChange}
+              autoComplete="off"
+            />
 
-  return <div>{render()}</div>;
+            {errors.name.length > 0 && (
+              <span className="error">{errors.name}</span>
+            )}
+          </div>
+          <div className="password">
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              onChange={handleChange}
+            />
+
+            {errors.password.length > 0 && (
+              <span className="error">{errors.password}</span>
+            )}
+          </div>
+          <div className="password">
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="password"
+              onChange={handleChange}
+            />
+
+            {errors.confirmPassword.length > 0 && (
+              <span className="error">{errors.confirmPassword}</span>
+            )}
+          </div>
+          <div className="info">
+            <small>Password must be eight characters in length.</small>
+          </div>
+          <div className="submit">
+            <button>Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
 };
 
 export default SignUp;

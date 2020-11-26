@@ -36,6 +36,9 @@ function Workout() {
   const currentWorkout = workouts[workoutIndex];
   return (
     <div className="workout-container">
+      <div className="workout-logo">
+        <h1>Dr Workout</h1>
+      </div>
       <div className="image-container">
         <img src={currentWorkout.gif_url} alt="workout image"></img>
       </div>
